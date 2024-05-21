@@ -163,7 +163,8 @@ section {
 }
 
 footer {
-    background-color: white;
+    background-color: #550C18;
+    color: white;
     padding-top: 0.5%;
     text-align: center;
 }
