@@ -90,6 +90,7 @@ h2 {
 
 .team-member img {
     border-radius: 50%;
+    border: 2px solid #550C18;
     width: 150px;
     height: 150px;
 }
