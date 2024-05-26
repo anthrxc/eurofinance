@@ -4,12 +4,12 @@ body {
     padding: 0;
 }
 
-.sticky-header .logo {
+.zagljavlje .logo {
     height: 65px;
     width: auto;
 }
 
-.sticky-header {
+.zagljavlje {
     position: sticky;
     top: 0;
     background-color: #550C18;
@@ -19,7 +19,7 @@ body {
     z-index: 1000;
 }
 
-.sticky-header .navbar-container {
+.zagljavlje .element-zaglavlja {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,29 +28,29 @@ body {
     padding: 0 20px;
 }
 
-.sticky-header h1 {
+.zagljavlje h1 {
     margin: 0;
     font-size: 24px;
 }
 
-.sticky-header nav ul {
+.zagljavlje nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.sticky-header nav ul li {
+.zagljavlje nav ul li {
     margin-left: 20px;
 }
 
-.sticky-header nav ul li a {
+.zagljavlje nav ul li a {
     color: white;
     text-decoration: none;
     padding: 8px 12px;
 }
 
-.sticky-header nav ul li a:hover {
+.zagljavlje nav ul li a:hover {
     background-color: #7B1E30;
     border-radius: 4px;
 }
@@ -65,7 +65,7 @@ section {
     margin-bottom: 40px;
 }
 
-.container {
+.element {
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,18 +82,18 @@ form {
     flex-direction: column;
 }
 
-.form-group {
+.upitnik-kredita {
     margin-bottom: 15px;
 }
 
-.form-group label {
+.upitnik-kredita label {
     margin-bottom: 5px;
     display: block;
 }
 
-.form-group input,
-.form-group select,
-.form-group option {
+.upitnik-kredita input,
+.upitnik-kredita select,
+.upitnik-kredita option {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
@@ -102,14 +102,14 @@ form {
     background-color: white;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+.upitnik-kredita input:focus,
+.upitnik-kredita select:focus {
     border-color: #550C18;
     border-width: 2px;
     outline: none;
 }
 
-.form-group option:hover {
+.upitnik-kredita option:hover {
     background-color: whitesmoke;
 }
 
@@ -127,8 +127,13 @@ button:hover {
     background-color: #7B1E30;
 }
 
-.results {
+.rezultati {
     margin-top: 20px;
+    text-align: center;
+}
+
+#netocan-unos {
+    display: none;
     text-align: center;
 }
 
@@ -139,6 +144,6 @@ footer {
     text-align: center;
 }
 
-.copy {
+.copyright {
     margin: 0;
 }

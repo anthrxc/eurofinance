@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header class="sticky-header">
-        <div class="navbar-container">
+    <header class="zagljavlje">
+        <div class="element-zaglavlja">
             <a href="../index.html"><img class="logo" src="../assets/EFlarge.png" alt="EuroFinance logo"></a>
             <nav>
                 <ul>
@@ -26,16 +26,16 @@
     </header>
 
     <main>
-        <section class="intro">
-            <div class="container">
+        <section class="uvod">
+            <div class="element">
                 <h1>Rješenja za Vaše Financijske Potrebe</h1>
                 <p>Bez obzira na to kakav kredit tražite, ovdje smo da vam pružimo prilagođena rješenja i vrhunsku
                     podršku.</p>
             </div>
         </section>
 
-        <section class="personal-loans">
-            <div class="container">
+        <section class="osobni-krediti">
+            <div class="element">
                 <h2>Osobni Krediti</h2>
                 <p>Detalji o osobnim kreditima, uvjetima, kamatnim stopama i procesu apliciranja.</p>
                 <ul>
@@ -47,8 +47,8 @@
             </div>
         </section>
 
-        <section class="business-loans">
-            <div class="container">
+        <section class="poslovni-krediti">
+            <div class="element">
                 <h2>Poslovni Krediti</h2>
                 <p>Informacije o kreditima za mala i srednja poduzeća, potrebna dokumentacija i savjeti za poslovne
                     korisnike.</p>
@@ -61,8 +61,8 @@
             </div>
         </section>
 
-        <section class="mortgage-loans">
-            <div class="container">
+        <section class="hipotekarni-krediti">
+            <div class="element">
                 <h2>Hipotekarni Krediti</h2>
                 <p>Uvjeti i prednosti hipotekarnih kredita.</p>
                 <ul>
@@ -74,68 +74,69 @@
             </div>
         </section>
 
-        <section class="loan-calculator">
-            <div class="container">
+        <section class="kalkulator-kredita">
+            <div class="element">
                 <h2>Izračunajte Vaš Kredit</h2>
                 <p>Koristite naš interaktivni kalkulator za izračun mjesečnih rata:</p>
                 <br>
-                <form id="loan-form">
-                    <div class="form-group">
-                        <label for="interest">Vrsta kredita</label>
-                        <select id="loan-type" required>
+                <form id="upitnik-kredita">
+                    <div class="upitnik-kredita">
+                        <label for="vrsta-kredita">Vrsta kredita</label>
+                        <select id="vrsta-kredita" required>
                             <option value="" disabled selected>Odaberite vrstu kredita</option>
-                            <option value="3.5" data-min-amount="1000" data-max-amount="50000" data-min-years="1" data-max-years="5">Osobni kredit - 3.5%</option>
-                            <option value="4.0" data-min-amount="5000" data-max-amount="200000" data-min-years="1" data-max-years="10">Poslovni kredit - 4.0%</option>
-                            <option value="2.0" data-min-amount="10000" data-max-amount="300000" data-min-years="10" data-max-years="30">Hipotekarni kredit - 2.0%</option>
+                            <option value="3.5">Osobni kredit (3.5%)</option>
+                            <option value="4.0">Poslovni kredit (4.0%)</option>
+                            <option value="2.0">Hipotekarni kredit (2.0%)</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="amount">Iznos kredita (EUR):</label>
-                        <input type="number" id="amount" required>
+                    <div class="upitnik-kredita">
+                        <label for="iznos">Iznos kredita (EUR):</label>
+                        <input type="number" id="iznos" required>
                     </div>
-                    <div class="form-group">
-                        <label for="years">Rok otplate (godine):</label>
-                        <input type="number" id="years" required>
+                    <div class="upitnik-kredita">
+                        <label for="godine">Rok otplate (godine):</label>
+                        <input type="number" id="godine" required>
                     </div>
-                <button type="button" onclick="calculateLoan()">Izračunaj</button>
+                <button type="button" onclick="izracunajKredit()">Izračunaj</button>
                 </form>
-                <div id="results" class="results">
-                    <h2>Mjesečna rata: <span id="monthly-payment"></span>0 EUR</h2>
-                    <h2>Ukupno plaćeno: <span id="total-payment"></span>0 EUR</h2>
-                    <h2>Ukupno kamata: <span id="total-interest"></span>0 EUR</h2>
+                <h2 id="netocan-unos">Netočan unos!</h2>
+                <div id="rezultati" class="rezultati">
+                    <h2>Mjesečna rata: <span id="mjesecna-rata"></span>0 EUR</h2>
+                    <h2>Ukupno plaćeno: <span id="ukupno-placeno"></span>0 EUR</h2>
+                    <h2>Ukupno kamata: <span id="ukupno-kamata"></span>0 EUR</h2>
                 </div>
             </div>
         </section>
 
-        <section class="faq">
-            <div class="container">
+        <section class="cesta-pitanja">
+            <div class="element">
                 <h2>Često Postavljana Pitanja</h2>
-                <div class="question1">
+                <div class="pitanje">
                     <h3>Koji su osnovni uvjeti za dobivanje kredita?</h3>
                     <p>Osnovni uvjeti uključuju stalni prihod, kreditnu sposobnost i odgovarajuću dokumentaciju.</p>
                 </div>
                 <br>
-                <div class="question2">
+                <div class="pitanje">
                     <h3>Kako mogu aplicirati za kredit?</h3>
                     <p>Aplicirati možete dolaskom u našu poslovnicu, samo se pobrinite da sa sobom imate sve relevantne dokumente.</p>        
                 </div>
                 <br>
-                <div class="question3">
+                <div class="pitanje">
                     <h3>Koliko dugo traje proces odobravanja kredita?</h3>
                     <p>Ovisno o vrsti, Vaš kredit može biti odobren unutar 24 sata, do maksimalno tjedan dana.</p>
                 </div>
                 <br>
-                <div class="qustion4">
+                <div class="pitanje">
                     <h3>Koje dokumente trebam donijeti prilikom apliciranja za kredit?</h3>
                     <p>Potrebni dokumenti uključuju osobnu iskaznicu, potvrdu o stalnim prihodima i druge relevantne financijske dokumente.</p>
                 </div>
                 <br>
-                <div class="question5">
+                <div class="pitanje">
                     <h3>Mogu li se uvjeti kredita prilagoditi mojim potrebama?</h3>
                     <p>Da, naši stručnjaci će surađivati s vama kako bi prilagodili uvjete kredita vašim specifičnim financijskim potrebama.</p>
                 </div>
                 <br>
-                <div class="question6">
+                <div class="pitanje">
                     <h3>Što se događa ako zakasnim s uplatom rate kredita?</h3>
                     <p>Ako zakasnite s uplatom rate kredita, može doći do dodatnih troškova i kamata. Preporučujemo da nas kontaktirate kako bismo našli najbolje rješenje za vašu situaciju.</p>
                 </div>
@@ -143,8 +144,8 @@
         </section>
 
 
-        <section class="contact">
-            <div class="container">
+        <section class="kontakt">
+            <div class="element">
                 <h2>Kontaktirajte nas</h2>
                 <p>Ako imate dodatna pitanja, slobodno nas kontaktirajte putem telefona, emaila ili dođite u našu poslovnicu.</p>
                 <p><strong>Telefon:</strong> +385 95 5259 180</p>
@@ -155,7 +156,7 @@
     </main>
 
     <footer>
-        <p class="copy">&copy; 2024. EuroFinance Ltd.</p>
+        <p class="copyright">&copy; 2024. EuroFinance Ltd.</p>
     </footer>
 
     <script src="kalkulator.js"></script>
