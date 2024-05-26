@@ -4,12 +4,12 @@ body {
     padding: 0;
 }
 
-.sticky-header .logo {
+.zagljavlje .logo {
     height: 65px;
     width: auto;
 }
 
-.sticky-header {
+.zagljavlje {
     position: sticky;
     top: 0;
     background-color: #550C18;
@@ -19,7 +19,7 @@ body {
     z-index: 1000;
 }
 
-.sticky-header .navbar-container {
+.zagljavlje .element-zaglavlja {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,29 +28,29 @@ body {
     padding: 0 20px;
 }
 
-.sticky-header h1 {
+.zagljavlje h1 {
     margin: 0;
     font-size: 24px;
 }
 
-.sticky-header nav ul {
+.zagljavlje nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.sticky-header nav ul li {
+.zagljavlje nav ul li {
     margin-left: 20px;
 }
 
-.sticky-header nav ul li a {
+.zagljavlje nav ul li a {
     color: white;
     text-decoration: none;
     padding: 8px 12px;
 }
 
-.sticky-header nav ul li a:hover {
+.zagljavlje nav ul li a:hover {
     background-color: #7B1E30;
     border-radius: 4px;
 }
@@ -65,7 +65,7 @@ section {
     margin-bottom: 40px;
 }
 
-.container {
+.element {
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -77,18 +77,18 @@ h2 {
     color: #550C18;
 }
 
-.team-members {
+.clanovi-tima {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.team-member {
+.clan-tima {
     text-align: center;
     margin: 20px;
 }
 
-.team-member img {
+.clan-tima img {
     border-radius: 50%;
     border: 2px solid #550C18;
     width: 150px;
@@ -102,6 +102,6 @@ footer {
     text-align: center;
 }
 
-.copy {
+.copyright {
     margin: 0;
 }
