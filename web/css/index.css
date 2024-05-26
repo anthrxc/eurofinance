@@ -4,12 +4,12 @@ body {
     padding: 0;
 }
 
-.sticky-header .logo {
+.zagljavlje .logo {
     height: 65px;
     width: auto;
 }
 
-.sticky-header {
+.zagljavlje {
     position: sticky;
     top: 0;
     background-color: #550C18;
@@ -19,7 +19,7 @@ body {
     z-index: 1000;
 }
 
-.sticky-header .navbar-container {
+.zagljavlje .element-zaglavlja {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,34 +28,34 @@ body {
     padding: 0 20px;
 }
 
-.sticky-header h1 {
+.zagljavlje h1 {
     margin: 0;
     font-size: 24px;
 }
 
-.sticky-header nav ul {
+.zagljavlje nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.sticky-header nav ul li {
+.zagljavlje nav ul li {
     margin-left: 20px;
 }
 
-.sticky-header nav ul li a {
+.zagljavlje nav ul li a {
     color: white;
     text-decoration: none;
     padding: 8px 12px;
 }
 
-.sticky-header nav ul li a:hover {
+.zagljavlje nav ul li a:hover {
     background-color: #7B1E30;
     border-radius: 4px;
 }
 
-.content-section {
+.sadrzaj {
     position: relative;
     height: 60vh;
     padding: 40px 0;
@@ -67,25 +67,25 @@ body {
     margin-bottom: 0;
 }
 
-.content-section h1 {
+.sadrzaj h1 {
     text-align: center;
     font-size: 38px;
     margin: 0 auto;
     color: #000000;
 }
 
-.content-section h1 span {
+.sadrzaj h1 span {
     color: #FFD700;
     filter: drop-shadow(1px 1px 2px #FFD700);
 }
 
-.background {
+.pozadina {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.content-box {
+.sadrzaj-tekst {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     padding: 20px;
@@ -96,12 +96,12 @@ body {
     font-size: 17px;
 }
 
-.content-box h2 {
+.sadrzaj-tekst h2 {
     margin-top: 0;
     margin-bottom: 35px;
 }
 
-.content-box button {
+.sadrzaj-tekst button {
     background-color: #333;
     color: white;
     border: none;
@@ -112,7 +112,7 @@ body {
     margin-bottom: 0;
 }
 
-.content-box button:hover {
+.sadrzaj-tekst button:hover {
     background-color: #575757;
 }
 
@@ -120,12 +120,12 @@ section {
     margin-bottom: 40px;
 }
 
-.contact-section {
+.kontaktirajte-nas {
     margin: 0 auto;
     padding-bottom: 40px;
 }
 
-.contact-section h1 {
+.kontaktirajte-nas h1 {
     font-size: 44px;
     text-align: center;
     margin-top: 0;
@@ -133,7 +133,7 @@ section {
     padding-top: 30px;
 }
 
-.contact {
+.kontakt {
     flex: 1;
     margin: 20px;
     padding: 20px;
@@ -141,21 +141,21 @@ section {
     max-width: 30%;
 }
 
-.contact .icon {
+.kontakt .icon {
     width: 32px;
     height: 32px;
 }
 
-.contact p:hover {
+.kontakt p:hover {
     color: #550C18;
 }
 
-.contact hr {
+.kontakt hr {
     margin: 20px 0;
     border: none;
 }
 
-.vertical-divider {
+.razdjeljnik {
     width: 1px;
     background-color: #000;
     height: auto;
@@ -169,7 +169,7 @@ footer {
     text-align: center;
 }
 
-.copy {
+.copyright {
     margin: 0;
     padding: 0.5%;
 }
